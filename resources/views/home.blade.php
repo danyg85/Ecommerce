@@ -22,7 +22,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{$product->title}}</h5>
                     <p class="card-text">{{$product->description}}</p>
-                    <a href="#" class="btn btn-dark">Vedi Prodotto</a>
+                    <a href={{route('productsingle',$product->id)}} class="btn btn-dark">Vedi Prodotto</a>
                 </div>
             </div>            
             
