@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header class="masthead mb-5" style="height: 90vh;
+<header class="masthead mb-5" style="height: 80vh;
   min-height: 500px;
   background-image: url('storage/images/meat.jpg');
   background-size: cover;
@@ -29,6 +29,16 @@
         </div>  
         @endforeach              
          
-    </div> 
+    </div>
+</div>
+<div class="container-fluid p-0">
+    <header class="masthead my-5" style="height: 80vh;
+    min-height: 500px;
+    background-image: url('storage/images/meat.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;">  
+    </header>
 </div>
 @endsection

@@ -78,21 +78,22 @@
               <h6>MODIFICARE ACCOUNT</h6>
               
               <hr>
-              <form>
+              <form method="POST" action={{route('')}}>
                 <div class="form-group">
                   <label class="d-block">Cambia Password</label>
+                  <input type="hidden" name="id" value={{$user->id}}
                   <input type="text" class="form-control" placeholder="Inserisci vecchia password">
                   <input type="text" class="form-control mt-1" placeholder="Nuova password">
                   <input type="text" class="form-control mt-1" placeholder="Conferma nuova password">
                 </div>
               </form>
               <hr>
-              <form>                
+              <form method="GET" action={{route('deleteuser',$user->id)}}>                
                 <div class="form-group">
                   <label class="d-block text-danger">Cancella Account</label>
                   <p class="text-muted font-size-sm">Una volta cancellato il tuo account, non potrai più tornare indietro.</p>
                 </div>
-                <button class="btn btn-danger" type="button">Cancella Account</button>
+                <button type="submit" class="btn btn-danger" type="button">Cancella Account</button>
               </form>
             </div>
             <div class="tab-pane" id="security">

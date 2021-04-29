@@ -1861,9 +1861,92 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
+  data: function data() {
+    return {
+      cards: ['Today', 'Yesterday'],
+      drawer: null,
+      links: [['mdi-inbox-arrow-down', 'Inbox'], ['mdi-send', 'Send'], ['mdi-delete', 'Trash'], ['mdi-alert-octagon', 'Spam']]
+    };
   }
 });
 
@@ -37421,32 +37504,167 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
+  return _c(
+    "v-app",
+    { attrs: { id: "inspire" } },
+    [
+      _c(
+        "v-system-bar",
+        { attrs: { app: "" } },
+        [
+          _c("v-spacer"),
+          _vm._v(" "),
+          _c("v-icon", [_vm._v("mdi-square")]),
+          _vm._v(" "),
+          _c("v-icon", [_vm._v("mdi-circle")]),
+          _vm._v(" "),
+          _c("v-icon", [_vm._v("mdi-triangle")])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-navigation-drawer",
+        {
+          attrs: { app: "" },
+          model: {
+            value: _vm.drawer,
+            callback: function($$v) {
+              _vm.drawer = $$v
+            },
+            expression: "drawer"
+          }
+        },
+        [
+          _c(
+            "v-sheet",
+            { staticClass: "pa-4", attrs: { color: "grey lighten-4" } },
+            [
+              _c("v-avatar", {
+                staticClass: "mb-4",
+                attrs: { color: "grey darken-1", size: "64" }
+              }),
+              _vm._v(" "),
+              _c("div", [_vm._v("john@vuetifyjs.com")])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("v-divider"),
+          _vm._v(" "),
+          _c(
+            "v-list",
+            _vm._l(_vm.links, function(ref) {
+              var icon = ref[0]
+              var text = ref[1]
+              return _c(
+                "v-list-item",
+                { key: icon, attrs: { link: "" } },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [_c("v-icon", [_vm._v(_vm._s(icon))])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item-content",
+                    [_c("v-list-item-title", [_vm._v(_vm._s(text))])],
+                    1
+                  )
+                ],
+                1
               )
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
+            }),
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-main",
+        [
+          _c(
+            "v-container",
+            { staticClass: "py-8 px-6", attrs: { fluid: "" } },
+            [
+              _c(
+                "v-row",
+                _vm._l(_vm.cards, function(card) {
+                  return _c(
+                    "v-col",
+                    { key: card, attrs: { cols: "12" } },
+                    [
+                      _c(
+                        "v-card",
+                        [
+                          _c("v-subheader", [_vm._v(_vm._s(card))]),
+                          _vm._v(" "),
+                          _c(
+                            "v-list",
+                            { attrs: { "two-line": "" } },
+                            [
+                              _vm._l(6, function(n) {
+                                return [
+                                  _c(
+                                    "v-list-item",
+                                    { key: n },
+                                    [
+                                      _c("v-list-item-avatar", {
+                                        attrs: { color: "grey darken-1" }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-list-item-content",
+                                        [
+                                          _c("v-list-item-title", [
+                                            _vm._v("Message " + _vm._s(n))
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("v-list-item-subtitle", [
+                                            _vm._v(
+                                              "\n                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellendus distinctio similique\n                    "
+                                            )
+                                          ])
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  n !== 6
+                                    ? _c("v-divider", {
+                                        key: "divider-" + n,
+                                        attrs: { inset: "" }
+                                      })
+                                    : _vm._e()
+                                ]
+                              })
+                            ],
+                            2
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                }),
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
