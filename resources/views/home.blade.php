@@ -31,6 +31,46 @@
          
     </div>
 </div>
+
+<div class="container my-5">
+    <div class="row my-3">
+        <div class="col-md-6">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src={{asset('storage/images/meat.jpg')}} class="img-fluid">
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid p-0">
     <header class="masthead my-5" style="height: 80vh;
     min-height: 500px;

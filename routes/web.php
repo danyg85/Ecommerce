@@ -25,3 +25,6 @@ Route::get('/profile', [App\Http\Controllers\UserController::class, 'show'])->na
 Route::get('/products/{id}', [App\Http\Controllers\ProductController::class, 'single'])->name('productsingle')->middleware('auth');
 Route::patch('/user/update' , [App\Http\Controllers\UserController::class, 'update'])->name('update')->middleware('auth');
 Route::get('/user/delete/{id}' , [App\Http\Controllers\UserController::class, 'destroy'])->name('deleteuser')->middleware('auth');
+
+
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin')->middleware('auth');

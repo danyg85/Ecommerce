@@ -78,11 +78,11 @@
               <h6>MODIFICARE ACCOUNT</h6>
               
               <hr>
-              <form method="POST" action={{route('')}}>
+              <form method="POST" >
                 <div class="form-group">
                   <label class="d-block">Cambia Password</label>
-                  <input type="hidden" name="id" value={{$user->id}}
-                  <input type="text" class="form-control" placeholder="Inserisci vecchia password">
+                  <input type="hidden" name="id" value={{$user->id}}>
+                  <input type="text" class="form-control" name="oldpsw" placeholder="Inserisci vecchia password">
                   <input type="text" class="form-control mt-1" placeholder="Nuova password">
                   <input type="text" class="form-control mt-1" placeholder="Conferma nuova password">
                 </div>
